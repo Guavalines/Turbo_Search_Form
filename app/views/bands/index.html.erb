@@ -2,6 +2,16 @@
 
 <h1>Bands</h1>
 
+<%= form_with(url: bands_path, method: :get, data: {
+turbo_frame: "bands"}) do |form| %>
+  <% form.label :query, "Search by band name", class:
+  "block mb-2" %>
+  <%= form.text_field :query, class: "py-3 px-4 rounded
+  border ring-0 focus:ring-4 focus:ring-orange-100
+  focus:shadow-none focus:border-orange-500
+  focus:outline-none" %>
+<% end %>
+
 <div id="bands">
   <% @bands.each do |band| %>
     <%= render band %>
