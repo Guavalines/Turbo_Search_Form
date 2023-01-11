@@ -10,12 +10,18 @@ turbo_frame: "bands"}) do |form| %>
   border ring-0 focus:ring-4 focus:ring-orange-100
   focus:shadow-none focus:border-orange-500
   focus:outline-none" %>
+
+  <%= form.submit "Search", class: "px-4 py-3
+font-medium bg-orange-300 text-neutral-900 rounded
+inline-flex items-center cursor-pointer
+hover:bg-orange-400 focus:ring-4 ring-0
+focus:ring-orange-100" %>
 <% end %>
 
 <div class="my-16">
 </div>
 
-<%= link_to "New band", new_band_path, class: "px-4 py-4
+<%= link_to "New band", new_band_path, class: "px-4 py-3
 font-medium bg-orange-300 text-neutral-900 rounded
 inline-flex items-center cursor-pointer
 hover:bg-orange-400 focus:ring-4 ring-0
