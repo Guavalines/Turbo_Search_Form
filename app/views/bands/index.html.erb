@@ -21,6 +21,7 @@ turbo_frame: "bands"}) do |form| %>
 <% end %>
 
 <div class="my-16">
+  <%= render "bands", bands: @bands %>
 </div>
 
 <%= link_to "New band", new_band_path, class: "px-4 py-3
