@@ -3,7 +3,7 @@
 <h1 class="font-bold text-3xl mb-3">Bands</h1>
 
 <%= form_with(url: bands_path, method: :get, data: {
-turbo_frame: "bands"}) do |form| %>
+turbo_frame: "bands", turbo_action: "advance"}) do |form| %>
   <% form.label :query, "Search by band name", class:
   "block mb-2" %>
   <div class="flex space-x-3">

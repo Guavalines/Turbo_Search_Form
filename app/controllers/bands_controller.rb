@@ -10,7 +10,9 @@ class BandsController < ApplicationController
     end
 
     if turbo_frame_request?
+      render partial: "bands", locals: { bands: @bands }
     else
+      render :index
     end
   end
 
