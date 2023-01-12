@@ -6,16 +6,18 @@
 turbo_frame: "bands"}) do |form| %>
   <% form.label :query, "Search by band name", class:
   "block mb-2" %>
-  <%= form.text_field :query, class: "py-3 px-4 rounded
-  border ring-0 focus:ring-4 focus:ring-orange-100
-  focus:shadow-none focus:border-orange-500
-  focus:outline-none" %>
+  <div class="flex space-x-3">
+    <%= form.text_field :query, class: "py-3 px-4 rounded
+    border ring-0 focus:ring-4 focus:ring-orange-100
+    focus:shadow-none focus:border-orange-500
+    focus:outline-none" %>
 
-  <%= form.submit "Search", class: "px-4 py-3
-font-medium bg-orange-300 text-neutral-900 rounded
-inline-flex items-center cursor-pointer
-hover:bg-orange-400 focus:ring-4 ring-0
-focus:ring-orange-100" %>
+    <%= form.submit "Search", class: "px-4 py-3
+  font-medium bg-orange-300 text-neutral-900 rounded
+  inline-flex items-center cursor-pointer
+  hover:bg-orange-400 focus:ring-4 ring-0
+  focus:ring-orange-100" %>
+  </div>
 <% end %>
 
 <div class="my-16">
