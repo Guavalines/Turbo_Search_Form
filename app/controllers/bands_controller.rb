@@ -3,7 +3,15 @@ class BandsController < ApplicationController
 
   # GET /bands or /bands.json
   def index
-    if params[:query]
+    if params[:query].present?
+      @bands = Band.where("name LIKE ?", "#{params[:query]} %")
+    else
+      @bands = Band.all
+    end
+
+    if turbo_frame_request?
+    else
+    end
   end
 
   # GET /bands/1 or /bands/1.json
