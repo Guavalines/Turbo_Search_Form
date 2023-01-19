@@ -5,6 +5,9 @@ This is a real-time search form that allows users to search for bands.
 - Uses STIMULUS JS and TURBO FRAMES on the front end
 - Includes TAILWIND
 
+![Turbo Search](https://user-images.githubusercontent.com/100665876/213370341-cd8152a8-0cae-40d2-9ddc-555982881fc5.jpeg)
+
+
 
 ## Please initialize the following before starting the app:
 
