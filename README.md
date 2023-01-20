@@ -7,6 +7,23 @@ This is a real-time search form that allows users to search for bands.
 
 ![Turbo Search](https://user-images.githubusercontent.com/100665876/213370341-cd8152a8-0cae-40d2-9ddc-555982881fc5.jpeg)
 
+- Here is the bands controller index:
+
+```
+  def index
+    if params[:query].present?
+      @bands = Band.where("name LIKE ?", "#{params[:query]} %")
+    else
+      @bands = Band.all
+    end
+
+    if turbo_frame_request?
+      render partial: "bands", locals: { bands: @bands }
+    else
+      render :index
+    end
+  end
+ ```
 
 
 ## Please initialize the following before starting the app:
