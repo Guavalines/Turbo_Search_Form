@@ -3,7 +3,7 @@
 ## Description
 This is a real-time search form that allows users to search for bands.
 
-## Highlights
+## Features
 - Uses STIMULUS JS and TURBO FRAMES on the front end
 - Includes TAILWIND
 
