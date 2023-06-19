@@ -30,7 +30,7 @@ This is a real-time search form that allows users to search for bands.
 
 ## Please initialize the following before starting the app:
 
-### Versions
+### Tools
 
 ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white) 3.0.3
 
