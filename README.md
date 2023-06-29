@@ -1,4 +1,4 @@
-# TURBO SEARCH FORM
+# 🚀 TURBO SEARCH FORM
 
 ## Description
 This is a real-time search form that allows users to search for bands.
